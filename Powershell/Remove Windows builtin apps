@@ -1,0 +1,100 @@
+#Use this to build a script on what to unistall on client computer
+
+Get-AppxPackage -AllUsers | Remove-AppxPackage
+#To remove all modern apps from system account
+
+Get-AppXProvisionedPackage -online | Remove-AppxProvisionedPackage -online
+Use the following commands to remove a specific app:
+#Uninstall Skype app
+
+get-appxpackage *messaging* | remove-appxpackage
+#Uninstall Sway
+
+get-appxpackage *sway* | remove-appxpackage
+#Uninstall Phone:
+
+get-appxpackage *commsphone* | remove-appxpackage
+#Uninstall Phone Companion:
+
+get-appxpackage *windowsphone* | remove-appxpackage
+#Uninstall Phone and Phone Companion apps together:
+
+get-appxpackage *phone* | remove-appxpackage
+#Uninstall Calendar and Mail apps together:
+
+get-appxpackage *communicationsapps* | remove-appxpackage
+#Uninstall People:
+
+get-appxpackage *people* | remove-appxpackage
+#Uninstall Groove Music:
+
+get-appxpackage *zunemusic* | remove-appxpackage
+#Uninstall Movies & TV:
+
+get-appxpackage *zunevideo* | remove-appxpackage
+#Uninstall Groove Music and Movies & TV apps together:
+
+get-appxpackage *zune* | remove-appxpackage
+#Uninstall Money:
+
+get-appxpackage *bingfinance* | remove-appxpackage
+#Uninstall News:
+
+get-appxpackage *bingnews* | remove-appxpackage
+#Uninstall Sports:
+
+get-appxpackage *bingsports* | remove-appxpackage
+#Uninstall Weather:
+
+get-appxpackage *bingweather* | remove-appxpackage
+#Uninstall Money, News, Sports and Weather apps together:
+
+get-appxpackage *bing* | remove-appxpackage
+#Uninstall OneNote:
+
+get-appxpackage *onenote* | remove-appxpackage
+#Uninstall Alarms & Clock:
+
+get-appxpackage *alarms* | remove-appxpackage
+#Uninstall Calculator:
+
+get-appxpackage *calculator* | remove-appxpackage
+#Uninstall Camera:
+
+get-appxpackage *camera* | remove-appxpackage
+#Uninstall Photos:
+
+get-appxpackage *photos* | remove-appxpackage
+#Uninstall Maps:
+
+get-appxpackage *maps* | remove-appxpackage
+#Uninstall Voice Recorder:
+
+get-appxpackage *soundrecorder* | remove-appxpackage
+#Uninstall Xbox:
+
+get-appxpackage *xbox* | remove-appxpackage
+#Uninstall Microsoft Solitaire Collection:
+
+get-appxpackage *solitaire* | remove-appxpackage
+#Uninstall Get Office:
+
+get-appxpackage *officehub* | remove-appxpackage
+#Uninstall Get Skype:
+
+get-appxpackage *skypeapp* | remove-appxpackage
+#Uninstall Get Started:
+
+get-appxpackage *getstarted* | remove-appxpackage
+#Uninstall 3D Builder:
+
+get-appxpackage *3dbuilder* | remove-appxpackage
+#Uninstall Microsoft Store (Windows apps store):
+
+get-appxpackage *windowsstore* | remove-appxpackage
+#Disable Microsoft Windows Defender
+
+Set-MpPreference -DisableRealtimeMonitoring $true
+#Enable Microsoft Windows Defender
+#Disable Microsoft Windows Defender
+Set-MpPreference -DisableRealtimeMonitoring $false

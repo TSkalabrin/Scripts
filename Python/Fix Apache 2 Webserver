@@ -1,0 +1,16 @@
+# Start Apache 2 web server
+
+sudo /etc/init.d/apache2 start
+sudo service apache2 start
+
+
+# Restart Apache 2 web server
+
+sudo /etc/init.d/apache2 restart
+sudo service apache2 restart
+
+
+# Stop Apache 2 web server
+
+ sudo /etc/init.d/apache2 stop  
+ sudo service apache2 stop
